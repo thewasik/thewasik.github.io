@@ -7,7 +7,7 @@
 const SITE = {
   name: "Shaikh Wasik Alli",
   initials: "SA",
-  title: "Full-Stack Software Engineer",
+  title: "Full-Stack Software Engineer | Laravel & Angular Developer",
   location: "Bhubaneswar, India",
   email: "skwasikalli98@gmail.com",
   phone: "+91 7504210525",
@@ -21,7 +21,7 @@ const SITE = {
   },
 
   heroIntro:
-    "I build enterprise web applications end to end — Angular front ends backed by Laravel APIs and MySQL, deployed for systems that carry real production traffic. Most recently, three years on a large-scale government scholarship platform.",
+    "I build enterprise web applications end to end, from responsive Angular front ends to robust Laravel APIs and MySQL databases, delivering solutions designed for real-world production environments. Over the past three years, I’ve contributed to a large-scale government scholarship platform, building and maintaining features that support complex workflows and serve real users at scale.",
 
   about: {
     paragraphs: [

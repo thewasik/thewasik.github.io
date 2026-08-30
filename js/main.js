@@ -16,7 +16,8 @@
       SITE.name.split(" ").slice(-1)[0],
       `<span>${SITE.name.split(" ").slice(-1)[0]}</span>`
     );
-    document.getElementById("heroRole").textContent = `${SITE.title} — ${SITE.location}`;
+    // document.getElementById("heroRole").textContent = `${SITE.title} — ${SITE.location}`;
+    document.getElementById("heroRole").textContent = SITE.title;
     document.getElementById("heroIntro").textContent = SITE.heroIntro;
 
     // Resume buttons
