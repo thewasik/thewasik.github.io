@@ -1,48 +1,26 @@
 # Shaikh Wasik Alli — Portfolio
 
-A static personal portfolio site. No build step, no dependencies — plain HTML, CSS, and JS.
+A static personal portfolio. No build step and no dependencies — HTML, CSS, and JS. It is set up for GitHub Pages at the site root, which is how [thewasik.github.io](https://thewasik.github.io/) is published.
 
-## Before you publish
+## Edit the page
 
-1. **Add your real links** in `js/data.js` — search for `"ADD YOUR LINK"`:
-   - `links.github` — your GitHub profile URL
-   - `links.linkedin` — your LinkedIn profile URL
-2. Your résumé PDF is already in `assets/resume.pdf` (copied from the file you uploaded). Replace it any time by dropping a new PDF in the same location with the same filename.
-3. Optional: update `og:url` in `index.html` (`<meta property="og:url" ...>`) once you know your GitHub Pages URL.
+Visible copy lives in `index.html`. `js/data.js` is a short fact sheet (name, links, project durations) so those details stay easy to find. It is not what the browser renders. `js/main.js` handles the menu, the current section in the navigation, and motion.
 
-## Publish to GitHub Pages
+The résumé download points at `assets/resume.pdf`. Replace that file to update the download. The PDF still describes the scholarship portal as 24 months and does not mention Go SUGAM. The site follows the later correction: about three years on the scholarship portal, and six months on Go SUGAM.
 
-```bash
-# from inside this folder
-git init
-git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-username>.github.io.git
-git push -u origin main
-```
+## Publish
 
-Then in your repo on GitHub: **Settings → Pages → Source → Deploy from branch → `main` / root**.
+From this folder, on the `main` branch of `thewasik/thewasik.github.io`, GitHub Pages serves the repository root at `https://thewasik.github.io/`.
 
-- If your repo is named `<your-username>.github.io`, the site goes live at `https://<your-username>.github.io/`.
-- If it's named something else (e.g. `portfolio`), it goes live at `https://<your-username>.github.io/portfolio/`.
+Relative links assume the site is served from the domain root. A project site in a subfolder would need those paths adjusted.
 
-Pages usually takes 1–2 minutes to go live after the first push.
-
-## Adding to LinkedIn
-
-Once live, add the URL under your LinkedIn profile's **"Website"** field (Contact info → Websites) or in your **Featured** section.
-
-## Updating content later
-
-All copy — experience, the featured project, skills, education — lives in `js/data.js`. Edit that file and refresh; no other files need to change for content updates.
-
-## File structure
+## Files
 
 ```
-├── index.html        # page structure + SEO metadata
-├── css/styles.css     # all styling (design tokens at the top)
-├── js/data.js          # all content — edit this to update the site
-├── js/main.js          # rendering + interactions (nav, scroll reveal, etc.)
-└── assets/resume.pdf   # downloadable résumé
+├── index.html
+├── css/styles.css
+├── js/main.js
+├── js/data.js
+├── assets/favicon.svg
+└── assets/resume.pdf
 ```
